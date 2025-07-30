@@ -1,0 +1,81 @@
+nav{
+  min-width:303.52px;
+  display:flex;
+  flex-direction:column;
+  width:20%;
+  text-align:center;
+  
+  
+}
+
+nav header{
+  padding-top:1.5rem;
+  padding-bottom:1rem;
+  border-right:2px solid grey;
+}
+
+header{
+  font-size:1.8rem;
+  color:black;
+}
+ .nav-link{
+   text-align:left;
+   padding:0.7rem 0.7rem 0.7rem 1.5rem;
+  text-decoration:none;
+  color: #4d4e53;
+  border-bottom:2px solid grey;
+  border-right:2px solid grey;
+}
+nav > a:first-child{
+  border-top:2px solid pink;
+}
+main{
+  width:80%;
+  margin:1.5rem 1rem 2rem 1.5rem;
+  padding-bottom:2rem;
+}
+p{
+ padding-left:1.5rem;
+}
+code
+{ display:block;
+ background-color: #f7f7f7;
+  padding:1.2rem 1rem 1.2rem ;
+  font-family: monospace;
+  margin-left:2rem;
+}
+@media (max-width: 768px) {
+  .main-section {
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+body {
+  margin: 0;
+  padding-left: 300px; /* Must match navbar width */
+  min-width: 300px;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 2px solid grey;
+  background: white;
+  z-index: 1000;
+}
+
+/* Keep your existing media query EXACTLY as is */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
